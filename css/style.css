@@ -32,16 +32,21 @@ nav ul li {
 
 
 /* hyperlink styling */
-a {
+nav ul li a {
     text-decoration: none;
     color: white;
 }
-a:hover {
+nav ul li a:hover {
     color: #ff6b6c;
 }
-a:active {
+nav ul li a:active {
     color: #ffc145;
 }
-a:link {
+nav ul li a:link {
     color: white;
+}
+
+/* article styling */
+article {
+    margin: 30px 50px 0 155px; 
 }
