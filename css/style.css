@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+
+/* header styling */
+.header {
+    background-color: black;
+    height: 9.375rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+#logo {
+    float: left;
+}
+.mainheading {
+    float: left;
+    padding: 0.0625rem 0 0px 1.875rem;
+    font-size: 3.75rem;
+}
+
+
+/* navbar styling */
+nav ul li {
+    list-style-type: none;
+    float: right;
+    margin: 3.75rem 3.125rem 0 0;
+    font-size: 1.875rem;
+}
+
+
+/* hyperlink styling */
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #ff6b6c;
+}
+a:active {
+    color: #ffc145;
+}
+a:link {
+    color: white;
+}
