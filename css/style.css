@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+
+/* header styling */
+.header {
+    background-color: black;
+    height: 9.375rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+#logo {
+    float: left;
+}
+.mainheading {
+    float: left;
+    padding: 0.0625rem 0 0rem 1.875rem;
+    font-size: 3.4375rem;
+}
+
+
+/* navbar styling */
+nav ul li {
+    list-style-type: none;
+    float: right;
+    margin: 3.75rem 10px 0 0;
+    font-size: 1.875rem;
+}
+
+
+/* hyperlink styling */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover {
+    color: #ff6b6c;
+}
+nav ul li a:active {
+    color: #ffc145;
+}
+nav ul li a:link {
+    color: white;
+}
+
+/* article styling */
+article {
+    margin: 30px 50px 0 155px; 
+}
