@@ -31,7 +31,7 @@ body {
 /* navbar styling */
 nav ul li {
     list-style-type: none;
-    margin: 3.75rem 0.625rem 0 0;
+    margin: 3.75rem 0 0 0;
     font-size: 1.875rem;
 }
 
@@ -53,16 +53,12 @@ nav ul li a:active {
 nav ul li a:link {
     color: white;
 }
-p {
-    color: rgb(155, 75, 75)
-}
 
 
 
 /* article styling */
 article {
-    margin: 1.875rem 9.6875rem 0 9.6875rem; 
-    border: solid black;
+    margin: 0 0 0 0;
     padding: 0 1.875rem 0 1.875rem;
     background-color: #fff;
     font-family: 'Quicksand', sans-serif;
@@ -83,14 +79,18 @@ article {
     width: 100%;
 }
 .articleContainer {
-    width: 60%;
+    width: 65%;
     float: left;
 }
 .asideContainer {
-    width: 10%;
+    width: 20%;
     float: left;
+    background-color: rgb(0, 0, 0);
+    height: 25rem;
+    position: sticky;
     
 }
+
 
 /* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 /* responsive design */
@@ -130,6 +130,7 @@ article {
         list-style-type: none;
         margin: 0.75rem 0 0 0;
         font-size: 0.875rem;
+       
     }
     nav ul {
         padding: 0 0 0 5px;
@@ -186,6 +187,7 @@ article {
     .asideContainer {
         width: 10%;
         float: left;
+        
         
     }
 }
