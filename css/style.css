@@ -15,7 +15,10 @@ body {
     padding: 0;
     color: white;
     font-family: 'Tinos', serif;
+    top: 0;
+    position: sticky;
 }
+/* when scrolling down, make the navbar shrink from top and bottom */
 #logo {
     float: left;
 }
@@ -40,9 +43,11 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: #ff6b6c;
+    transition: ease-in 350ms;
 }
 nav ul li a:active {
     color: #ffc145;
+    transition: 0 
 }
 nav ul li a:link {
     color: white;
