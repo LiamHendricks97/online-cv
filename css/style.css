@@ -7,6 +7,7 @@ body {
 }
 
 
+
 /***** header styling *****/
 .header {
     background-color: rgba(0, 0, 0, 0.795);
@@ -20,12 +21,11 @@ body {
     /* position:fixed; */
     /* display: inline; */
 }
-/* when scrolling down, make the navbar shrink from top and bottom */
-
 .mainheading {
     font-size: 5.75rem;
-    margin: 0;
+    margin: 0 0 0 3.75rem;
 }
+
 
 
 /* navbar styling */
@@ -34,6 +34,7 @@ nav ul li {
     margin: 3.75rem 0.625rem 0 0;
     font-size: 1.875rem;
 }
+
 
 
 /* hyperlink styling */
@@ -52,6 +53,11 @@ nav ul li a:active {
 nav ul li a:link {
     color: white;
 }
+p {
+    color: rgb(155, 75, 75)
+}
+
+
 
 /* article styling */
 article {
@@ -63,11 +69,13 @@ article {
 }
 
 
+
 /* styling of article headers */
 .headerarticle {
     font-size: 2.5rem;
     line-height: 1.875rem;
 }
+
 
 
 /* page layout styling */
@@ -81,4 +89,103 @@ article {
 .asideContainer {
     width: 10%;
     float: left;
+    
+}
+
+/* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+/* responsive design */
+@media only screen and (max-width: 360px){
+    body {
+        margin: 0;
+        background-color: white;
+        background-image: url(../images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    
+    /***** header styling *****/
+    .header {
+        background-color: rgba(0, 0, 0, 0.795);
+        height:auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: 'Tinos', serif;
+        top: 0;
+        /* position:fixed; */
+        /* display: inline; */
+    }
+    .mainheading {
+        font-size: 1.9rem;
+        margin: 0 0 0 3.75rem;
+    }
+    
+    
+    
+    /* navbar styling */
+    nav ul li {
+        list-style-type: none;
+        margin: 0.75rem 0 0 0;
+        font-size: 0.875rem;
+    }
+    nav ul {
+        padding: 0 0 0 5px;
+    }
+    
+    /* hyperlink styling */
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    nav ul li a:hover {
+        color: #ff6b6c;
+        transition: ease-in 350ms;
+    }
+    nav ul li a:active {
+        color: #ffc145;
+        transition: 0 
+    }
+    nav ul li a:link {
+        color: white;
+    }
+    
+    
+    
+    /* article styling */
+    article {
+        margin: 1.875rem 0 0 2.5rem; 
+        border: solid black;
+        padding: 0 1.875rem 0 1.875rem;
+        background-color: #fff;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 0.6875rem;
+        margin-top: 0;
+    }
+    
+    
+    
+    /* styling of article headers */
+    .headerarticle {
+        font-size: 1.25rem;
+        line-height: 1.575rem;
+    }
+    
+    
+    
+    /* page layout styling */
+    .mainContainer {
+        width: 100%;
+    }
+    .articleContainer {
+        width: 60%;
+        float: left;
+    }
+    .asideContainer {
+        width: 10%;
+        float: left;
+        
+    }
 }
