@@ -9,28 +9,23 @@ body {
 
 /***** header styling *****/
 .header {
-    background-color: rgba(0, 0, 0, 0.938);
-    height: 9.375rem;
+    background-color: rgba(0, 0, 0, 0.795);
+    height:auto;
+    width: 100%;
     margin: 0;
     padding: 0;
     color: white;
     font-family: 'Tinos', serif;
     top: 0;
-    position: sticky;
+    /* position:fixed; */
+    /* display: inline; */
 }
 /* when scrolling down, make the navbar shrink from top and bottom */
-#logo {
-    float: left;
-}
-.mainheading {
-    float: left;
-    padding: 0.0625rem 0 0rem 1.875rem;
-    font-size: 3.4375rem;
-}
+
+
 /* navbar styling */
 nav ul li {
     list-style-type: none;
-    float: right;
     margin: 3.75rem 0.625rem 0 0;
     font-size: 1.875rem;
 }
@@ -67,4 +62,16 @@ article {
 .headerarticle {
     font-size: 2.5rem;
     line-height: 1.875rem;
+}
+
+.mainContainer {
+    width: 100%;
+}
+.articleContainer {
+    width: 70%;
+    float: right;
+}
+.asideContainer {
+    width: 30%;
+    float: left;
 }
