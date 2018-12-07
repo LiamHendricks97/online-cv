@@ -22,6 +22,11 @@ body {
 }
 /* when scrolling down, make the navbar shrink from top and bottom */
 
+.mainheading {
+    font-size: 5.75rem;
+    margin: 0;
+}
+
 
 /* navbar styling */
 nav ul li {
@@ -64,14 +69,16 @@ article {
     line-height: 1.875rem;
 }
 
+
+/* page layout styling */
 .mainContainer {
     width: 100%;
 }
 .articleContainer {
-    width: 70%;
-    float: right;
+    width: 60%;
+    float: left;
 }
 .asideContainer {
-    width: 30%;
+    width: 10%;
     float: left;
 }
