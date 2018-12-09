@@ -10,7 +10,8 @@ body {
 .gridcontainer {
     display: grid;
     row-gap: 3.125rem;
-    grid-template-columns: 15% 35% 45% 5%;
+    column-gap: 10% ;
+    grid-template-columns: 1% 45% 25% 5%;
     grid-template-rows: auto auto auto 3.125rem;
     grid-template-areas: 
         'header header header header'
@@ -28,6 +29,16 @@ body {
     position: sticky;
     top: 0%;
     height:80%;
+    width: 120%
+}
+.aside:hover {
+    grid-area: aside;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0%;
+    height:80%;
+    width: 1100%;
+    transition: width 0.5s ease-out;
 }
 .main {
     grid-area: main;
@@ -52,10 +63,14 @@ nav ul li {
     font-size: 1.875rem;
     list-style-type: none;
     padding: 6.25rem 0 0 0;
+    overflow: hidden;
+}
+ul {
+    padding: 0 0 0 1.375rem;;
 }
 a {
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(34, 101, 160);
 }
 .headerarticle {
     font-size: 2.625rem;
