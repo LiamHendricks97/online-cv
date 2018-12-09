@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     background-image: url(../images/bg.jpg);
@@ -66,7 +69,7 @@ nav ul li {
     overflow: hidden;
 }
 ul {
-    padding: 0 0 0 1.375rem;;
+    padding: 0 0 0 1.375rem;
 }
 a {
     text-decoration: none;
