@@ -33,15 +33,16 @@ body {
     background-color: rgba(0, 0, 0, 0.747);
     position: sticky;
     top: 0%;
-    height: 80%;
-    width: 120%
+    height: 50%;
+    width: 120%;
+    
 }
         .aside:hover {
             grid-area: aside;
             background-color: rgba(0, 0, 0, 0.767);
             position: sticky;
             top: 0%;
-            height:80%;
+            height:600px;
             width: 1300%;
             transition: width 0.5s ease-out;
             z-index: 1
@@ -72,9 +73,9 @@ body {
 
 /* sidebar style */
 nav ul li {
-    font-size: 1.875rem;
+    font-size: 20px;
     list-style-type: none;
-    padding: 6.25rem 0 0 0;
+    padding: 3.25rem 0 0 0;
     overflow: hidden;
 }
 ul {
@@ -111,4 +112,22 @@ nav ul li a:link {
     padding: 0 1.25rem 0 2.5rem;
     font-size: 1.0625rem;
     font-family: 'Quicksand', sans-serif;
+}
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    grid-template-rows: 200px;
+    grid-template-areas: 
+        'htmlLogoContainer cssLogoContainer javaLogoContainer'
+}
+.htmlLogoContainer {
+    grid-area: htmlLogoContainer;
+}
+.cssLogoContainer {
+    grid-area: cssLogoContainer;
+}
+.javaLogoContainer {
+    grid-area: javaLogoContainer;
 }
