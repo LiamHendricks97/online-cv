@@ -38,13 +38,14 @@ body {
 
 .aside {
     grid-area: aside ;
-    background-color: rgba(88, 224, 224, 0.747);
+    background-color: rgb(255, 255, 255);
+    /* color: rgba(88, 224, 224, 0.747) !important;       doesnt work */
     position: sticky;
     top: 0%;
     height: 50%;
     width: 120%;
     transition: width 0.5s ease-out ;
-    /* visibility: hidden; */
+    /* visibility: hidden; */  
     
 }
         .aside:hover {
@@ -54,7 +55,7 @@ body {
             top: 0%;
             height:600px;
             width: 1300%;
-            transition: width 0.5s ease-out ;
+            transition: width 0.5s ease-out;
             z-index: 1
         }
 
@@ -84,7 +85,7 @@ body {
     top: 0;
     position: sticky;
 }
-/* NOTE GOW IT BECAME A STICKY!!! */
+/* NOTE HOW IT BECAME A STICKY!!! */
 
 
 /* sidebar style */
@@ -151,18 +152,23 @@ p {
     grid-template-columns: 30% 30% 30%;
     gap: 5%;
     grid-template-rows: 200px;
+    justify-items: center;
     grid-template-areas: 
         'htmlLogoContainer cssLogoContainer javaLogoContainer';
 }
-.htmlLogoContainer {
-    grid-area: htmlLogoContainer;
-}
-.cssLogoContainer {
-    grid-area: cssLogoContainer;
-}
-.javaLogoContainer {
-    grid-area: javaLogoContainer;
-}
+    .htmlLogoContainer {
+        grid-area: htmlLogoContainer;
+    }
+    .cssLogoContainer {
+        grid-area: cssLogoContainer;
+    }
+    .javaLogoContainer {
+        grid-area: javaLogoContainer;
+    }
+/* justify items and align items apply respectively centers the items horizontaly and vertically but mostly evenly amongst the grid  */
+/* justify content and align content instead tends to move the content as a collective, thus keeping its rowgap and column gap */
+/* justify self and align self applies above to only a specific block within a grid */
+/* Notes link: https://alligator.io/css/align-justify/ */
 /* LOGO STYLE END*************************************************************************************************************************************** */
 
 
@@ -175,116 +181,120 @@ p {
     column-gap: 4.375rem;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto ;
+    justify-items: center;
+    align-items: center;
     grid-template-areas: 
     'port1 port2 port3 port4'
     'port5 port6 port7 port8';
 }
 /* use alt and mouse to add code to below items simultaneously */
-.port1 {
-    grid-area: port1;
-    position: relative;
-    width: 160px;
-    height: 160px;
-    background-color: black;
+    .port1 {
+        grid-area: port1;
+        position: relative;
+        width: 160px;
+        height: 160px;
+        background-color: black;
 
-}
-.port2 {
-    grid-area: port2;
-    position: relative;
-    width: 160px;
-    height: 160px;
-    background-color: black;
+    }
+    .port2 {
+        grid-area: port2;
+        position: relative;
+        width: 160px;
+        height: 160px;
+        background-color: black;
 
-}
-.port3 {
-    grid-area: port3;
-    position: relative;
-    width: 160px;
-    height: 160px;
-    background-color: black;
+    }
+    .port3 {
+        grid-area: port3;
+        position: relative;
+        width: 160px;
+        height: 160px;
+        background-color: black;
 
-}
-.port4 {
-    grid-area: port4;
-    position: relative;
-    width: 160px;
-    height: 160px;
-    background-color: black;
+    }
+    .port4 {
+        grid-area: port4;
+        position: relative;
+        width: 160px;
+        height: 160px;
+        background-color: black;
 
-}
-.port5 {
-    grid-area: port5;
-    position: relative;
-    width: 160px;
-    height: 160px;
-    background-color: black;
+    }
+    .port5 {
+        grid-area: port5;
+        position: relative;
+        width: 160px;
+        height: 160px;
+        background-color: black;
 
-}
-.port6 {
-    grid-area: port6;
-    position: relative;
-    width: 160px;
-    height: 160px;
-    background-color: black;
+    }
+    .port6 {
+        grid-area: port6;
+        position: relative;
+        width: 160px;
+        height: 160px;
+        background-color: black;
 
-}
-.port7 {
-    grid-area: port7;
-    position: relative;
-    width: 160px;
-    height: 160px;
-    background-color: black;
+    }
+    .port7 {
+        grid-area: port7;
+        position: relative;
+        width: 160px;
+        height: 160px;
+        background-color: black;
 
-}
-.port8 {
-    grid-area: port8;
-    position: relative;
-    width: 160px;
-    height: 160px;
-    background-color: black;
+    }
+    .port8 {
+        grid-area: port8;
+        position: relative;
+        width: 160px;
+        height: 160px;
+        background-color: black;
 
-}
+    }
 
- 
-.port1:hover {
-    grid-area: port1;
-    width: 180px;
-    height: 180px;
-}
-.port2:hover {
-    grid-area: port2;
-    width: 180px;
-    height: 180px;
-}
-.port3:hover {
-    grid-area: port3;
-    width: 180px;
-    height: 180px;
-}
-.port4:hover {
-    grid-area: port4;
-    width: 180px;
-    height: 180px;
-}
-.port5:hover {
-    grid-area: port5;
-    width: 180px;
-    height: 180px;    
-}
-.port6:hover {
-    grid-area: port6;
-    width: 180px;
-    height: 180px;
-}
-.port7:hover {
-    grid-area: port7;
-    width: 180px;
-    height: 180px;
-}
-.port8:hover {
-    grid-area: port8;
-    width: 180px;
-    height: 180px;
-}
+    
+    .port1:hover {
+        grid-area: port1;
+        width: 180px;
+        height: 180px;
+    }
+    .port2:hover {
+        grid-area: port2;
+        width: 180px;
+        height: 180px;
+    }
+    .port3:hover {
+        grid-area: port3;
+        width: 180px;
+        height: 180px;
+    }
+    .port4:hover {
+        grid-area: port4;
+        width: 180px;
+        height: 180px;
+    }
+    .port5:hover {
+        grid-area: port5;
+        width: 180px;
+        height: 180px;    
+    }
+    .port6:hover {
+        grid-area: port6;
+        width: 180px;
+        height: 180px;
+    }
+    .port7:hover {
+        grid-area: port7;
+        width: 180px;
+        height: 180px;
+    }
+    .port8:hover {
+        grid-area: port8;
+        width: 180px;
+        height: 180px;
+    }
 /* PORTFOLIO STYLE AND CONTAINER END******************************************************************************************************************** */
-/* need to figuer out way to resize boxes within parameters */
+/* need to figure out way to resize boxes within parameters */
+/* when resizing horizontally, the gap needs to get smaller. We need to find out how to go about doing so. */
+/* I need to adjust and add the necessary grid blocks so that my sticky header actually work. */
