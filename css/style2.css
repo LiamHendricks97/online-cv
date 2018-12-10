@@ -20,7 +20,7 @@ body {
         'header header header header'
         'aside main main blank'
         'aside main main blank'
-        'footer footer footer footer'
+        'footer footer footer footer';
 }
 .header {
     grid-area: header;
@@ -30,21 +30,23 @@ body {
 }
 .aside {
     grid-area: aside ;
-    background-color: rgba(0, 0, 0, 0.747);
+    background-color: rgba(88, 224, 224, 0.747);
     position: sticky;
     top: 0%;
     height: 50%;
     width: 120%;
+    transition: width 0.5s ease-out ;
+    /* visibility: hidden; */
     
 }
         .aside:hover {
             grid-area: aside;
-            background-color: rgba(0, 0, 0, 0.767);
+            background-color: rgb(26, 24, 24);
             position: sticky;
             top: 0%;
             height:600px;
             width: 1300%;
-            transition: width 0.5s ease-out;
+            transition: width 0.5s ease-out ;
             z-index: 1
         }
 .main {
@@ -107,20 +109,25 @@ nav ul li a:link {
 .headerarticle {
     font-size: 3.125rem;
     font-family: 'Tinos', serif;
+    /* padding-left: 3%; */
+    text-align: center;
 }
 .article {
-    padding: 0 1.25rem 0 2.5rem;
+    padding: 0 1.5625rem 0 1.5625rem;
     font-size: 1.0625rem;
     font-family: 'Quicksand', sans-serif;
 }
 
+
+
+/* HTML CSS and JAVA logo's */
 .skillsContainer {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     gap: 5%;
     grid-template-rows: 200px;
     grid-template-areas: 
-        'htmlLogoContainer cssLogoContainer javaLogoContainer'
+        'htmlLogoContainer cssLogoContainer javaLogoContainer';
 }
 .htmlLogoContainer {
     grid-area: htmlLogoContainer;
@@ -131,3 +138,102 @@ nav ul li a:link {
 .javaLogoContainer {
     grid-area: javaLogoContainer;
 }
+
+
+
+.columns {
+    column-count: 2;
+    column-width: 20%;
+}
+p {
+    margin-top: 0%;
+}
+
+
+
+.portfolioContainer {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto ;
+    grid-template-areas: 
+    'port1 port2 port3 port4'
+    'port5 port6 port7 port8';
+}
+/* use alt and mouse to add code to below items simultaneously */
+.port1 {
+    grid-area: port1;
+
+}
+.port2 {
+    grid-area: port2;
+
+}
+.port3 {
+    grid-area: port3;
+
+}
+.port4 {
+    grid-area: port4;
+
+}
+.port5 {
+    grid-area: port5;
+
+}
+.port6 {
+    grid-area: port6;
+
+}
+.port7 {
+    grid-area: port7;
+
+}
+.port8 {
+    grid-area: port8;
+
+}
+
+ 
+.port1:hover {
+    grid-area: port1;
+    width: 300px;
+    ;
+}
+.port2:hover {
+    grid-area: port2;
+    width: 300px;
+    ;
+}
+.port3:hover {
+    grid-area: port3;
+    width: 300px;
+    ;
+}
+.port4:hover {
+    grid-area: port4;
+    width: 300px;
+    ;
+}
+.port5:hover {
+    grid-area: port5;
+    width: 300px;
+    ;    
+}
+.port6:hover {
+    grid-area: port6;
+    width: 300px;
+    ;
+}
+.port7:hover {
+    grid-area: port7;
+    width: 300px;
+    ;
+}
+.port8:hover {
+    grid-area: port8;
+    width: 300px;
+    ;
+}
+
+/* need to figuer out way to resize boxes within parameters */
