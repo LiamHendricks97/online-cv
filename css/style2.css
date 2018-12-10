@@ -153,7 +153,8 @@ p {
 
 .portfolioContainer {
     display: grid;
-    gap: 1px;
+    row-gap: 4.375rem;
+    column-gap: 4.375rem;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto ;
     grid-template-areas: 
@@ -163,77 +164,110 @@ p {
 /* use alt and mouse to add code to below items simultaneously */
 .port1 {
     grid-area: port1;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: black;
 
 }
 .port2 {
     grid-area: port2;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: black;
 
 }
 .port3 {
     grid-area: port3;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: black;
 
 }
 .port4 {
     grid-area: port4;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: black;
 
 }
 .port5 {
     grid-area: port5;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: black;
 
 }
 .port6 {
     grid-area: port6;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: black;
 
 }
 .port7 {
     grid-area: port7;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: black;
 
 }
 .port8 {
     grid-area: port8;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: black;
 
 }
 
  
 .port1:hover {
     grid-area: port1;
-    width: 300px;
-    ;
+    width: 180px;
+    height: 180px;
 }
 .port2:hover {
     grid-area: port2;
-    width: 300px;
-    ;
+    width: 180px;
+    height: 180px;
 }
 .port3:hover {
     grid-area: port3;
-    width: 300px;
-    ;
+    width: 180px;
+    height: 180px;
+    
 }
 .port4:hover {
     grid-area: port4;
-    width: 300px;
-    ;
+    width: 180px;
+    height: 180px;
 }
 .port5:hover {
     grid-area: port5;
-    width: 300px;
-    ;    
+    width: 180px;
+    height: 180px;    
 }
 .port6:hover {
     grid-area: port6;
-    width: 300px;
-    ;
+    width: 180px;
+    height: 180px;
 }
 .port7:hover {
     grid-area: port7;
-    width: 300px;
-    ;
+    width: 180px;
+    height: 180px;
 }
 .port8:hover {
     grid-area: port8;
-    width: 300px;
-    ;
+    width: 180px;
+    height: 180px;
 }
 
 /* need to figuer out way to resize boxes within parameters */
