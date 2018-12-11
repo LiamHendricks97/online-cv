@@ -177,8 +177,9 @@ p {
 /* PORTFOLIO CONTAINER AND STYLING********************************************************************************************************************** */
 .portfolioContainer {
     display: grid;
-    row-gap: 20px;
-    column-gap: 1px;
+    /* row-gap: 20px; */
+    /* column-gap: 1px
+    z-index: 5;; */
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 200px 200px ;
     justify-items: center;
@@ -194,6 +195,7 @@ p {
         width: 160px;
         height: 160px;
         background-color: black;
+        z-index: 5;
 
     }
     .port2 {
@@ -201,7 +203,8 @@ p {
         position: relative;
         width: 160px;
         height: 160px;
-        background-color: black;
+        background-color: rgb(53, 45, 45);
+        z-index: 5;
 
     }
     .port3 {
@@ -209,7 +212,8 @@ p {
         position: relative;
         width: 160px;
         height: 160px;
-        background-color: black;
+        background-color: rgb(87, 71, 71);
+        z-index: 5;
 
     }
     .port4 {
@@ -217,7 +221,8 @@ p {
         position: relative;
         width: 160px;
         height: 160px;
-        background-color: black;
+        background-color: rgb(117, 76, 76);
+        z-index: 5;
 
     }
     .port5 {
@@ -225,7 +230,8 @@ p {
         position: relative;
         width: 160px;
         height: 160px;
-        background-color: black;
+        background-color: rgb(59, 49, 49);
+        z-index: 5;
 
     }
     .port6 {
@@ -233,7 +239,8 @@ p {
         position: relative;
         width: 160px;
         height: 160px;
-        background-color: black;
+        background-color: rgb(116, 71, 71);
+        z-index: 5;
 
     }
     .port7 {
@@ -241,7 +248,8 @@ p {
         position: relative;
         width: 160px;
         height: 160px;
-        background-color: black;
+        background-color: rgb(138, 68, 68);
+        z-index: 5;
 
     }
     .port8 {
@@ -249,7 +257,8 @@ p {
         position: relative;
         width: 160px;
         height: 160px;
-        background-color: black;
+        background-color: rgb(199, 43, 43);
+        z-index: 5;
 
     }
 
@@ -258,41 +267,49 @@ p {
         grid-area: port1;
         width: 199px;
         height: 199px;
+        z-index: 10;
     }
     .port2:hover {
         grid-area: port2;
         width: 199px;
         height: 199px;
+        z-index: 10;
     }
     .port3:hover {
         grid-area: port3;
         width: 199px;
         height: 199px;
+        z-index: 10;
     }
     .port4:hover {
         grid-area: port4;
         width: 199px;
         height: 199px;
+        z-index: 10;
     }
     .port5:hover {
         grid-area: port5;
         width: 199px;
-        height: 199px;    
+        height: 199px;
+        z-index: 10;    
     }
     .port6:hover {
         grid-area: port6;
         width: 199px;
         height: 199px;
+        z-index: 10;
     }
     .port7:hover {
         grid-area: port7;
         width: 199px;
         height: 199px;
+        z-index: 10;
     }
     .port8:hover {
         grid-area: port8;
         width: 199px;
         height: 199px;
+        z-index: 10;
     }
 /* PORTFOLIO STYLE AND CONTAINER END******************************************************************************************************************** */
 
@@ -303,5 +320,6 @@ p {
 
 /* when resizing horizontally and vertically, the gap needs to get smaller. We need to find out how to go about doing so. */
     /* Fix to above problem is by giving adequate space to to grid item within container on all sides and then using the justify and align */
-/* I need to adjust and add the necessary grid blocks so that my sticky header actually work. */
+/* BUT, I now want boxes to overlap one anouther. Adding borders can help with making it more neat */
 
+/* I need to adjust and add the necessary grid blocks so that my sticky header actually work. */
