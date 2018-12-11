@@ -177,10 +177,10 @@ p {
 /* PORTFOLIO CONTAINER AND STYLING********************************************************************************************************************** */
 .portfolioContainer {
     display: grid;
-    row-gap: 4.375rem;
-    column-gap: 4.375rem;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto ;
+    row-gap: 20px;
+    column-gap: 1px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 200px 200px ;
     justify-items: center;
     align-items: center;
     grid-template-areas: 
@@ -256,45 +256,52 @@ p {
     
     .port1:hover {
         grid-area: port1;
-        width: 180px;
-        height: 180px;
+        width: 199px;
+        height: 199px;
     }
     .port2:hover {
         grid-area: port2;
-        width: 180px;
-        height: 180px;
+        width: 199px;
+        height: 199px;
     }
     .port3:hover {
         grid-area: port3;
-        width: 180px;
-        height: 180px;
+        width: 199px;
+        height: 199px;
     }
     .port4:hover {
         grid-area: port4;
-        width: 180px;
-        height: 180px;
+        width: 199px;
+        height: 199px;
     }
     .port5:hover {
         grid-area: port5;
-        width: 180px;
-        height: 180px;    
+        width: 199px;
+        height: 199px;    
     }
     .port6:hover {
         grid-area: port6;
-        width: 180px;
-        height: 180px;
+        width: 199px;
+        height: 199px;
     }
     .port7:hover {
         grid-area: port7;
-        width: 180px;
-        height: 180px;
+        width: 199px;
+        height: 199px;
     }
     .port8:hover {
         grid-area: port8;
-        width: 180px;
-        height: 180px;
+        width: 199px;
+        height: 199px;
     }
 /* PORTFOLIO STYLE AND CONTAINER END******************************************************************************************************************** */
-/* need to figure out way to resize boxes within parameters */
-/* when resizing horizontally, the gap needs to get smaller. We need to find out how to go about doing so. */
+
+
+
+/* WORK TO STILL DO AND IDEA BIN */
+/* need to figure out way to resize boxes within parameters (edit: do we tho?) */
+
+/* when resizing horizontally and vertically, the gap needs to get smaller. We need to find out how to go about doing so. */
+    /* Fix to above problem is by giving adequate space to to grid item within container on all sides and then using the justify and align */
 /* I need to adjust and add the necessary grid blocks so that my sticky header actually work. */
+
