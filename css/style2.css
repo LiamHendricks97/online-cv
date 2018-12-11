@@ -1,3 +1,11 @@
+
+/* selector {
+    property: value;
+} */
+
+
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -175,6 +183,7 @@ p {
 
 
 /* PORTFOLIO CONTAINER AND STYLING********************************************************************************************************************** */
+    /* Below code should be able to be done via the [transform: scale();] selector but at the cost of losing some specialities that the grid offers */
 .portfolioContainer {
     display: grid;
     /* row-gap: 20px; */
@@ -332,10 +341,10 @@ p {
         width: 280px;
         height: 280px;
         z-index: 10;
-        /* transition: width 1s ease-in, height 2s ease-in;   
+        /* transition: width 1s ease-in, height 2s ease-in; */
         transition-property: width, height;
         transition-duration: 250ms;
-        transition-timing-function: linear;  */
+        transition-timing-function: linear;
     }
     .port6:hover {
         grid-area: port6;
@@ -371,11 +380,22 @@ p {
 
 
 
+/* I still need to decide on whether or not to keep this as usable style that other elements can use (as a sort of hack? p tag for column did something similar) or to change it to a once-off ID */
+.noPadMargin {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
 /* WORK TO STILL DO AND IDEA BIN */
 /* need to figure out way to resize boxes within parameters (edit: do we tho?) */
 
 /* when resizing horizontally and vertically, the gap needs to get smaller. We need to find out how to go about doing so. */
-    /* Fix to above problem is by giving adequate space to to grid item within container on all sides and then using the justify and align */
+    /* Fix to above problem is by giving adequate space to to grid item within container on all sides and then using the justify and align. Above babbling about gap sizes has be come irrelevent */
 /* BUT, I now want boxes to overlap one anouther. Adding borders can help with making it more neat */
 
 /* I need to adjust and add the necessary grid blocks so that my sticky header actually work. */
+    /* for code quality, lets group the ports eg    .port1,
+                                                    .port2,
+                                                    .port3,
+                                                    .etc */
