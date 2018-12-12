@@ -123,3 +123,108 @@ nav a:hover {
 .clearfix {
   *zoom:1; 
 }
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 1000px) {
+  html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: Helvetica, Helvetica Neue, Arial;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .header-container {
+    border-bottom: 20px solid #0B132B;
+  }
+  
+  .footer-container,
+  .main aside {
+    border-top: 20px solid #0B132B;
+  }
+  
+  .header-container,
+  .footer-container,
+  .main aside {
+    background: #67AAF9;
+  }
+  
+  .title {
+    color: white;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #0b132b;
+  }
+  
+  nav a:hover,
+  nav a:visited {
+    color: white;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .main {
+    padding: 30px 0;
+  }
+  
+  .main article h1 {
+    font-size: 2em;
+  }
+  
+  .main aside {
+    color: white;
+    padding: 0px 5% 10px;
+  }
+  
+  .footer-container footer {
+    color: white;
+    padding: 20px 0;
+  }
+  /* clearfixes */
+    
+.clearfix:before,
+.cleafix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+
+}
+.clearfix {
+  *zoom:1; 
+}
+}
