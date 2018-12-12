@@ -69,13 +69,14 @@ body {
 
 .main {
     grid-area: main;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.171);
     z-index: 0;
+    color: white;
 }
 
 .footer {
     grid-area: footer;
-    background-color: rgb(0, 128, 128);
+    background-color: rgb(0, 0, 0);
     z-index: 2;
 }
 /* GRID LAYOUT AND STYLING END************************************************************************************************************************** */
@@ -440,8 +441,9 @@ p {
 /* have to footer, one bottom and one a=on top of that...same colour as header */
 /* make the main container semitrans to blend in better and change font color to white */
 /* use fr and learn how it works */
-/* take gallery out */
 /* take cv out of heaser and change github name to online-cv */
 /* optimalization for picture (its too big and takes too much space) */
 /* add imo as contributor */
 /* add and update readme */
+/* take away the two column style applied to the about me */
+/* make logos black */
