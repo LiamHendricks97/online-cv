@@ -389,7 +389,7 @@ p {
         grid-template-areas: 
             'con1 con2'
             'con3 con4';
-            grid-template: 
+            /* grid-template:  */
     }
     
     .container_con1 {
@@ -443,11 +443,5 @@ p {
 /* take gallery out */
 /* take cv out of heaser and change github name to online-cv */
 /* optimalization for picture (its too big and takes too much space) */
-
-
-
-
-
-
-
-
+/* add imo as contributor */
+/* add and update readme */
