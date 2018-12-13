@@ -11,7 +11,7 @@ html{
 }
 body {
     margin: 0;
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/bg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -170,19 +170,19 @@ p {
 
 
 
-/* PORTFOLIO CONTAINER AND STYLING********************************************************************************************************************** */
+/* portfolioFOLIO CONTAINER AND STYLING********************************************************************************************************************** */
     /* Below code should be able to be done via the [transform: scale();] selector but at the cost of losing some specialities that the grid offers */
 .portfolioContainer {
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template: 
-        'port1 port2 port3 port4' 200px
-        'port5 port6 port7 port8' 200px / 25% 25% 25% 25%;
+        'portfolio1 portfolio2 portfolio3 portfolio4' 200px
+        'portfolio5 portfolio6 portfolio7 portfolio8' 200px / 25% 25% 25% 25%;
 }
 /* use alt and mouse to add code to below items simultaneously */
-    .port1 {
-        grid-area: port1;
+    .portfolio1 {
+        grid-area: portfolio1;
         position: relative;
         width: 160px;
         height: 160px;
@@ -191,10 +191,11 @@ p {
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
+        border: solid 0.625rem white;
 
     }
-    .port2 {
-        grid-area: port2;
+    .portfolio2 {
+        grid-area: portfolio2;
         position: relative;
         width: 160px;
         height: 160px;
@@ -203,10 +204,11 @@ p {
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
+        border: solid 0.625rem white;
 
     }
-    .port3 {
-        grid-area: port3;
+    .portfolio3 {
+        grid-area: portfolio3;
         position: relative;
         width: 160px;
         height: 160px;
@@ -215,10 +217,11 @@ p {
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
+        border: solid 0.625rem white;
 
     }
-    .port4 {
-        grid-area: port4;
+    .portfolio4 {
+        grid-area: portfolio4;
         position: relative;
         width: 160px;
         height: 160px;
@@ -227,10 +230,11 @@ p {
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
+        border: solid 0.625rem white;
 
     }
-    .port5 {
-        grid-area: port5;
+    .portfolio5 {
+        grid-area: portfolio5;
         position: relative;
         width: 160px;
         height: 160px;
@@ -239,10 +243,11 @@ p {
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
+        border: solid 0.625rem white;
 
     }
-    .port6 {
-        grid-area: port6;
+    .portfolio6 {
+        grid-area: portfolio6;
         position: relative;
         width: 160px;
         height: 160px;
@@ -251,10 +256,11 @@ p {
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
+        border: solid 0.625rem white;
 
     }
-    .port7 {
-        grid-area: port7;
+    .portfolio7 {
+        grid-area: portfolio7;
         position: relative;
         width: 160px;
         height: 160px;
@@ -263,10 +269,11 @@ p {
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
+        border: solid 0.625rem white;
 
     }
-    .port8 {
-        grid-area: port8;
+    .portfolio8 {
+        grid-area: portfolio8;
         position: relative;
         width: 160px;
         height: 160px;
@@ -275,12 +282,13 @@ p {
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
+        border: solid 0.625rem white;
 
     }
 
     
-    .port1:hover {
-        grid-area: port1;
+    .portfolio1:hover {
+        grid-area: portfolio1;
         width: 280px;
         height: 280px;
         z-index: 10;
@@ -288,8 +296,8 @@ p {
         transition-duration: 250ms;
         transition-timing-function: linear;
     }
-    .port2:hover {
-        grid-area: port2;
+    .portfolio2:hover {
+        grid-area: portfolio2;
         width: 280px;
         height: 280px;
         z-index: 10;
@@ -297,8 +305,8 @@ p {
         transition-duration: 250ms;
         transition-timing-function: linear;
     }
-    .port3:hover {
-        grid-area: port3;
+    .portfolio3:hover {
+        grid-area: portfolio3;
         width: 280px;
         height: 280px;
         z-index: 10;
@@ -306,8 +314,8 @@ p {
         transition-duration: 250ms;
         transition-timing-function: linear;
     }
-    .port4:hover {
-        grid-area: port4;
+    .portfolio4:hover {
+        grid-area: portfolio4;
         width: 280px;
         height: 280px;
         z-index: 10;
@@ -315,8 +323,8 @@ p {
         transition-duration: 250ms;
         transition-timing-function: linear;
     }
-    .port5:hover {
-        grid-area: port5;
+    .portfolio5:hover {
+        grid-area: portfolio5;
         width: 280px;
         height: 280px;
         z-index: 10;
@@ -324,8 +332,8 @@ p {
         transition-duration: 250ms;
         transition-timing-function: linear;
     }
-    .port6:hover {
-        grid-area: port6;
+    .portfolio6:hover {
+        grid-area: portfolio6;
         width: 280px;
         height: 280px;
         z-index: 10;
@@ -333,8 +341,8 @@ p {
         transition-duration: 250ms;
         transition-timing-function: linear;
     }
-    .port7:hover {
-        grid-area: port7;
+    .portfolio7:hover {
+        grid-area: portfolio7;
         width: 280px;
         height: 280px;
         z-index: 10;
@@ -342,8 +350,8 @@ p {
         transition-duration: 250ms;
         transition-timing-function: linear;
     }
-    .port8:hover {
-        grid-area: port8;
+    .portfolio8:hover {
+        grid-area: portfolio8;
         width: 280px;
         height: 280px;
         z-index: 10;
@@ -360,24 +368,24 @@ p {
         display:grid;
         column-gap: 5%;
         grid-template: 
-            'con1 con2' 50px
-            'con3 con4' 50px / 20% 30%;
+            'contact_details1 contact_details2' 50px
+            'contact_details3 contact_details4' 50px / 20% 30%;
     }
     
-    .container_con1 {
-        grid-area: con1;
+    .container_contact_details1 {
+        grid-area: contact_details1;
         text-align: left;
     }
-    .container_con2 {
-        grid-area: con2;
+    .container_contact_details2 {
+        grid-area: contact_details2;
         text-align: left;
     }
-    .container_con3{
-        grid-area: con3;
+    .container_contact_details3{
+        grid-area: contact_details3;
         text-align: left;
     }
-    .container_con4 {
-        grid-area: con4;
+    .container_contact_details4 {
+        grid-area: contact_details4;
         text-align: left;
     }
     
@@ -387,32 +395,14 @@ p {
 
 /* I still need to decide on whether or not to keep this as usable style that other elements can use (as a sort of hack? p tag for column did something similar) or to change it to a once-off ID */
 /* WORK TO STILL DO AND IDEA BIN */
-/* need to figure out way to resize boxes within parameters (edit: do we tho?) */
-
-/* when resizing horizontally and vertically, the gap needs to get smaller. We need to find out how to go about doing so. */
-    /* Fix to above problem is by giving adequate space to to grid item within container on all sides and then using the justify and align. Above babbling about gap sizes has be come irrelevent */
-/* BUT, I now want boxes to overlap one anouther. Adding borders can help with making it more neat */
-
-/* I need to adjust and add the necessary grid blocks so that my sticky header actually work. */
-    /* for code quality, lets group the ports eg    .port1,
-                                                    .port2,
-                                                    .port3,
-                                                    .etc */
-/* make text colour in header transparent using z-index */
-
-
 /* add logo to sidebar */
 /* use linkind */
-/* have to footer, one bottom and one a=on top of that */
+/* have to footer, one bottom and one on top of that */
 /* use fr and learn how it works */
 /* optimalization for picture (its too big and takes too much space) */
 /* add imo as contributor */
 /* add and update readme */
-/* take away the two column style applied to the about me */
-/* make logos black */
-/* change the grid area names to something more suitable */
-/* move when battery is 100% */
 /* add a "home button" to take me right to the top */
-/* get shorthand for justify and align */
 /* try to get more shorthand techiques to make code shorter and therefore easier navigate and research acceptable css layouts (such as having the css code next to each other inline style) */
 /* txt over cover page would look nice */
+/* make java logo work */
