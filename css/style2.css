@@ -25,14 +25,7 @@ body {
     display: grid;
     row-gap: 3.125rem;
     column-gap: 12% ;
-    /* grid-template-columns: 1% 45% 18% 0%;
-    grid-template-rows: 37.5rem auto auto 3.125rem;
-    grid-template-areas: 
-        'header header header header'
-        'aside main main blank'
-        'aside main main blank'
-        'footer footer footer footer'; */
-        grid-template: 
+    grid-template: 
         'header header header header' 27.5rem
         'aside main main blank' auto
         'aside main main blank' auto
@@ -45,21 +38,16 @@ body {
     background-image: url(../images/beg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* top: 0;
-    position: sticky; */
 }
 
 .aside {
     grid-area: aside ;
     background-color: rgb(255, 255, 255);
-    /* color: rgba(88, 224, 224, 0.747) !important;       doesnt work */
     position: sticky;
     top: 0%;
     height: 50%;
     width: 120%;
     transition: width 0.5s ease-out ;
-    /* visibility: hidden; */  
-    
 }
         .aside:hover {
             grid-area: aside;
@@ -140,7 +128,6 @@ nav ul li a:link {
 .headerarticle {
     font-size: 3.125rem;
     font-family: 'Tinos', serif;
-    /* padding-left: 3%; */
     text-align: center;
 }
 
@@ -148,11 +135,6 @@ nav ul li a:link {
     padding: 0 1.5625rem 0 1.5625rem;
     font-size: 1.0625rem;
     font-family: 'Quicksand', sans-serif;
-}
-
-.columns {
-    column-count: 2;
-    column-width: 20%;
 }
 
 p {
@@ -166,12 +148,9 @@ p {
 /* HTML CSS and JAVA logo's***************************************************************************************************************************** */
 .skillsContainer {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
     gap: 5%;
-    grid-template-rows: 200px;
     justify-items: center;
-    grid-template-areas: 
-        'htmlLogoContainer cssLogoContainer javaLogoContainer';
+    grid-template: 'htmlLogoContainer cssLogoContainer javaContainer' 12.5rem / 30% 30% 30%;
 }
     .htmlLogoContainer {
         grid-area: htmlLogoContainer;
@@ -195,19 +174,11 @@ p {
     /* Below code should be able to be done via the [transform: scale();] selector but at the cost of losing some specialities that the grid offers */
 .portfolioContainer {
     display: grid;
-    /* row-gap: 20px; */
-    /* column-gap: 1px
-    z-index: 5;; */
-    /* grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 200px 200px ; */
     justify-items: center;
     align-items: center;
-    /* grid-template-areas: 
-    'port1 port2 port3 port4'
-    'port5 port6 port7 port8'; */
     grid-template: 
-    'port1 port2 port3 port4' 200px
-    'port5 port6 port7 port8' 200px / 25% 25% 25% 25%;
+        'port1 port2 port3 port4' 200px
+        'port5 port6 port7 port8' 200px / 25% 25% 25% 25%;
 }
 /* use alt and mouse to add code to below items simultaneously */
     .port1 {
@@ -313,7 +284,6 @@ p {
         width: 280px;
         height: 280px;
         z-index: 10;
-        /* transition: width 1s ease-in, height 2s ease-in; */
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
@@ -323,7 +293,6 @@ p {
         width: 280px;
         height: 280px;
         z-index: 10;
-        /* transition: width 1s ease-in, height 2s ease-in; */
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
@@ -333,7 +302,6 @@ p {
         width: 280px;
         height: 280px;
         z-index: 10;
-        /* transition: width 1s ease-in, height 2s ease-in; */
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
@@ -343,7 +311,6 @@ p {
         width: 280px;
         height: 280px;
         z-index: 10;
-        /* transition: width 1s ease-in, height 2s ease-in; */
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
@@ -353,7 +320,6 @@ p {
         width: 280px;
         height: 280px;
         z-index: 10;
-        /* transition: width 1s ease-in, height 2s ease-in; */
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
@@ -363,7 +329,6 @@ p {
         width: 280px;
         height: 280px;
         z-index: 10;
-        /* transition: width 1s ease-in, height 2s ease-in; */
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
@@ -373,7 +338,6 @@ p {
         width: 280px;
         height: 280px;
         z-index: 10;
-        /* transition: width 1s ease-in, height 2s ease-in; */
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
@@ -383,7 +347,6 @@ p {
         width: 280px;
         height: 280px;
         z-index: 10;
-        /* transition: width 1s ease-in, height 2s ease-in; */
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
@@ -396,12 +359,7 @@ p {
     .container-contact_details {
         display:grid;
         column-gap: 5%;
-        /* grid-template-rows: 50px 50px;
-        grid-template-columns: 20% 30%;
-        grid-template-areas: 
-            'con1 con2'
-            'con3 con4'; */
-            grid-template: 
+        grid-template: 
             'con1 con2' 50px
             'con3 con4' 50px / 20% 30%;
     }
@@ -428,12 +386,6 @@ p {
 
 
 /* I still need to decide on whether or not to keep this as usable style that other elements can use (as a sort of hack? p tag for column did something similar) or to change it to a once-off ID */
-.noPadMargin {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-
 /* WORK TO STILL DO AND IDEA BIN */
 /* need to figure out way to resize boxes within parameters (edit: do we tho?) */
 
@@ -450,11 +402,9 @@ p {
 
 
 /* add logo to sidebar */
-/* use font awesonr and linkind */
-/* have to footer, one bottom and one a=on top of that...same colour as header */
-/* make the main container semitrans to blend in better and change font color to white */
+/* use linkind */
+/* have to footer, one bottom and one a=on top of that */
 /* use fr and learn how it works */
-/* take cv out of heaser and change github name to online-cv */
 /* optimalization for picture (its too big and takes too much space) */
 /* add imo as contributor */
 /* add and update readme */
