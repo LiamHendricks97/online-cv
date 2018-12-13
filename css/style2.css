@@ -25,13 +25,18 @@ body {
     display: grid;
     row-gap: 3.125rem;
     column-gap: 12% ;
-    grid-template-columns: 1% 45% 18% 0%;
+    /* grid-template-columns: 1% 45% 18% 0%;
     grid-template-rows: 37.5rem auto auto 3.125rem;
     grid-template-areas: 
         'header header header header'
         'aside main main blank'
         'aside main main blank'
-        'footer footer footer footer';
+        'footer footer footer footer'; */
+        grid-template: 
+        'header header header header' 27.5rem
+        'aside main main blank' auto
+        'aside main main blank' auto
+        'footer footer footer footer' 3.125rem / 1% 45% 18% 0%;
 }
 
 .header {
@@ -138,15 +143,18 @@ nav ul li a:link {
     /* padding-left: 3%; */
     text-align: center;
 }
+
 .article {
     padding: 0 1.5625rem 0 1.5625rem;
     font-size: 1.0625rem;
     font-family: 'Quicksand', sans-serif;
 }
+
 .columns {
     column-count: 2;
     column-width: 20%;
 }
+
 p {
     margin-top: 0%;
 }
@@ -190,13 +198,16 @@ p {
     /* row-gap: 20px; */
     /* column-gap: 1px
     z-index: 5;; */
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 200px 200px ;
+    /* grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 200px 200px ; */
     justify-items: center;
     align-items: center;
-    grid-template-areas: 
+    /* grid-template-areas: 
     'port1 port2 port3 port4'
-    'port5 port6 port7 port8';
+    'port5 port6 port7 port8'; */
+    grid-template: 
+    'port1 port2 port3 port4' 200px
+    'port5 port6 port7 port8' 200px / 25% 25% 25% 25%;
 }
 /* use alt and mouse to add code to below items simultaneously */
     .port1 {
@@ -385,12 +396,14 @@ p {
     .container-contact_details {
         display:grid;
         column-gap: 5%;
-        grid-template-rows: 50px 50px;
+        /* grid-template-rows: 50px 50px;
         grid-template-columns: 20% 30%;
         grid-template-areas: 
             'con1 con2'
-            'con3 con4';
-            /* grid-template:  */
+            'con3 con4'; */
+            grid-template: 
+            'con1 con2' 50px
+            'con3 con4' 50px / 20% 30%;
     }
     
     .container_con1 {
@@ -448,3 +461,8 @@ p {
 /* take away the two column style applied to the about me */
 /* make logos black */
 /* change the grid area names to something more suitable */
+/* move when battery is 100% */
+/* add a "home button" to take me right to the top */
+/* get shorthand for justify and align */
+/* try to get more shorthand techiques to make code shorter and therefore easier navigate and research acceptable css layouts (such as having the css code next to each other inline style) */
+/* txt over cover page would look nice */
