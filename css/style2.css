@@ -29,7 +29,7 @@ body {
         'header header header header' 27.5rem
         'aside main main blank' auto
         'aside main main blank' auto
-        'footer footer footer footer' 3.125rem / 1% 45% 18% 0%;
+        'footer footer footer footer' 3.125rem / 1% 45% 18% 0fr;
 }
 
 .header {
@@ -47,6 +47,7 @@ body {
     top: 0%;
     height: 50%;
     width: 120%;
+    /* width: 20px; */
     transition: width 0.5s ease-out ;
 }
         .aside:hover {
@@ -56,6 +57,7 @@ body {
             top: 0%;
             height:600px;
             width: 1300%;
+            /* width: 100%; */
             transition: width 0.5s ease-out;
             z-index: 1
         }
@@ -390,19 +392,11 @@ p {
     }
     
     /* container details grid end*********************************************************************************************************************** */
-
-
-
-/* I still need to decide on whether or not to keep this as usable style that other elements can use (as a sort of hack? p tag for column did something similar) or to change it to a once-off ID */
 /* WORK TO STILL DO AND IDEA BIN */
 /* add logo to sidebar */
 /* use linkind */
 /* have to footer, one bottom and one on top of that */
-/* use fr and learn how it works */
+/* use fr and learn how it works (doesnt seem to work so far) */
 /* optimalization for picture (its too big and takes too much space) */
-/* add imo as contributor */
-/* add and update readme */
 /* add a "home button" to take me right to the top */
 /* try to get more shorthand techiques to make code shorter and therefore easier navigate and research acceptable css layouts (such as having the css code next to each other inline style) */
-/* txt over cover page would look nice */
-/* make java logo work */
