@@ -150,7 +150,7 @@ p {
     display: grid;
     gap: 5%;
     justify-items: center;
-    grid-template: 'htmlLogoContainer cssLogoContainer javaContainer' 12.5rem / 30% 30% 30%;
+    grid-template: 'htmlLogoContainer cssLogoContainer javaLogoContainer' 12.5rem / 30% 30% 30%;
 }
     .htmlLogoContainer {
         grid-area: htmlLogoContainer;
