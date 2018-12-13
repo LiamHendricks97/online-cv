@@ -39,5 +39,6 @@ Tools:
 
 ## Contributors
 
-Liam Hendricks 2018
-Imraan Meyers 2018
+- Liam Hendricks 2018
+- Imraan Meyers 2018
+- Toyer
