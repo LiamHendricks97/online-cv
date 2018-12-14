@@ -29,13 +29,13 @@ body {
         'header header header header' 27.5rem
         'aside main main blank' auto
         'aside main main blank' auto
-        'footer footer footer footer' 3.125rem / 1% 45% 18% 0fr;
+        'footer footer footer footer' 3.125rem / 1% 1fr 1fr 0fr;
 }
 
 .header {
     grid-area: header;
     background-color: rgba(0, 0, 0, 0.774);
-    background-image: url(../images/beg.jpg);
+    background-image: url(../images/pexels-photo-988872.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -82,10 +82,12 @@ body {
 /* TITLE AND NAVBAR STYLING***************************************************************************************************************************** */
 .mainHeading {
     font-size: 4.6875rem;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
+    mix-blend-mode: exclusion;
+    color: white;
     letter-spacing: 1.25rem;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
     top: 0;
     position: sticky;
 }
@@ -152,7 +154,7 @@ p {
     display: grid;
     gap: 5%;
     justify-items: center;
-    grid-template: 'htmlLogoContainer cssLogoContainer javaLogoContainer' 12.5rem / 30% 30% 30%;
+    grid-template: 'htmlLogoContainer cssLogoContainer javaLogoContainer' 12.5rem / 1fr 1fr 1fr;
 }
     .htmlLogoContainer {
         grid-area: htmlLogoContainer;
@@ -181,6 +183,7 @@ p {
     grid-template: 
         'portfolio1 portfolio2 portfolio3 portfolio4' 200px
         'portfolio5 portfolio6 portfolio7 portfolio8' 200px / 25% 25% 25% 25%;
+        /* dont use fr as the other boxes move when one box is expanded */
 }
 /* use alt and mouse to add code to below items simultaneously */
     .portfolio1 {
@@ -400,3 +403,4 @@ p {
 /* optimalization for picture (its too big and takes too much space) */
 /* add a "home button" to take me right to the top */
 /* try to get more shorthand techiques to make code shorter and therefore easier navigate and research acceptable css layouts (such as having the css code next to each other inline style) */
+/* add fr to sides and remove (gaps?) */
