@@ -23,13 +23,11 @@ body {
 /* GRID LAYOUT AND STYLING *******************************************************************************************************************************/
 .gridcontainer {
     display: grid;
-    row-gap: 3.125rem;
-    /* column-gap:; */
     grid-template: 
         'header header header header' 0%
-        'aside main main blank' auto
-        'aside main main blank' auto
-        'footer footer footer footer' 0% / 1fr 40% 50% 0fr;
+        'aside main main main' auto
+        'aside main main main' auto
+        'footer footer footer footer' 0% / 1fr 50% 40% 00% ;
 }
 
 .header {
@@ -45,10 +43,10 @@ body {
     /* background-color: rgb(255, 255, 255); */
     position: sticky;
     top: 0%;
-    height: 50%;
+    height: 20%;
     padding-right: 0.875rem;
     /* width: 120%; */
-    /* width: 20px; */
+    /* width: 1.25rem; */
     transition: width 0.5s ease-out ;
 }
         .aside:hover {
@@ -56,7 +54,7 @@ body {
             /* background-color: rgb(26, 24, 24); */
             position: sticky;
             top: 0%;
-            /* height:600px; */
+            /* height:37.5rem; */
             /* width: 1300%; */
             /* width: 100%; */
             transition: width 0.5s ease-out;
@@ -98,7 +96,7 @@ body {
 
 /* sidebar style */
 nav ul li {
-    font-size: 20px;
+    font-size: 1.25rem;
     list-style-type: none;
     padding: 3.25rem 0 0 0;
     overflow: hidden;
@@ -131,10 +129,14 @@ nav ul li a:link {
 
 
 /* ARTICLE STYLE**************************************************************************************************************************************** */
+.headerarticle:first-child {
+    padding: 0.5em 0.5em ;
+}
 .headerarticle {
     font-size: 3.125rem;
     font-family: 'Tinos', serif;
     text-align: center;
+    padding: 5em 0em 1em 0;
 }
 
 .article {
@@ -183,16 +185,16 @@ p {
     justify-items: center;
     align-items: center;
     grid-template: 
-        'portfolio1 portfolio2 portfolio3 portfolio4' 200px
-        'portfolio5 portfolio6 portfolio7 portfolio8' 200px / 25% 25% 25% 25%;
+        'portfolio1 portfolio2 portfolio3 portfolio4' 12.5rem
+        'portfolio5 portfolio6 portfolio7 portfolio8' 12.5rem / 25% 25% 25% 25%;
         /* dont use fr as the other boxes move when one box is expanded */
 }
 /* use alt and mouse to add code to below items simultaneously */
     .portfolio1 {
         grid-area: portfolio1;
         position: relative;
-        width: 160px;
-        height: 160px;
+        width: 10rem;
+        height: 10rem;
         background-color: black;
         z-index: 5;
         transition-property: width, height;
@@ -204,8 +206,8 @@ p {
     .portfolio2 {
         grid-area: portfolio2;
         position: relative;
-        width: 160px;
-        height: 160px;
+        width: 10rem;
+        height: 10rem;
         background-color: rgb(53, 45, 45);
         z-index: 5;
         transition-property: width, height;
@@ -217,8 +219,8 @@ p {
     .portfolio3 {
         grid-area: portfolio3;
         position: relative;
-        width: 160px;
-        height: 160px;
+        width: 10rem;
+        height: 10rem;
         background-color: rgb(87, 71, 71);
         z-index: 5;
         transition-property: width, height;
@@ -230,8 +232,8 @@ p {
     .portfolio4 {
         grid-area: portfolio4;
         position: relative;
-        width: 160px;
-        height: 160px;
+        width: 10rem;
+        height: 10rem;
         background-color: rgb(117, 76, 76);
         z-index: 5;
         transition-property: width, height;
@@ -243,8 +245,8 @@ p {
     .portfolio5 {
         grid-area: portfolio5;
         position: relative;
-        width: 160px;
-        height: 160px;
+        width: 10rem;
+        height: 10rem;
         background-color: rgb(59, 49, 49);
         z-index: 5;
         transition-property: width, height;
@@ -256,8 +258,8 @@ p {
     .portfolio6 {
         grid-area: portfolio6;
         position: relative;
-        width: 160px;
-        height: 160px;
+        width: 10rem;
+        height: 10rem;
         background-color: rgb(116, 71, 71);
         z-index: 5;
         transition-property: width, height;
@@ -269,8 +271,8 @@ p {
     .portfolio7 {
         grid-area: portfolio7;
         position: relative;
-        width: 160px;
-        height: 160px;
+        width: 10rem;
+        height: 10rem;
         background-color: rgb(138, 68, 68);
         z-index: 5;
         transition-property: width, height;
@@ -282,8 +284,8 @@ p {
     .portfolio8 {
         grid-area: portfolio8;
         position: relative;
-        width: 160px;
-        height: 160px;
+        width: 10rem;
+        height: 10rem;
         background-color: rgb(199, 43, 43);
         z-index: 5;
         transition-property: width, height;
@@ -296,8 +298,8 @@ p {
     
     .portfolio1:hover {
         grid-area: portfolio1;
-        width: 280px;
-        height: 280px;
+        width: 17.5rem;
+        height: 17.5rem;
         z-index: 10;
         transition-property: width, height;
         transition-duration: 250ms;
@@ -305,8 +307,8 @@ p {
     }
     .portfolio2:hover {
         grid-area: portfolio2;
-        width: 280px;
-        height: 280px;
+        width: 17.5rem;
+        height: 17.5rem;
         z-index: 10;
         transition-property: width, height;
         transition-duration: 250ms;
@@ -314,8 +316,8 @@ p {
     }
     .portfolio3:hover {
         grid-area: portfolio3;
-        width: 280px;
-        height: 280px;
+        width: 17.5rem;
+        height: 17.5rem;
         z-index: 10;
         transition-property: width, height;
         transition-duration: 250ms;
@@ -323,8 +325,8 @@ p {
     }
     .portfolio4:hover {
         grid-area: portfolio4;
-        width: 280px;
-        height: 280px;
+        width: 17.5rem;
+        height: 17.5rem;
         z-index: 10;
         transition-property: width, height;
         transition-duration: 250ms;
@@ -332,8 +334,8 @@ p {
     }
     .portfolio5:hover {
         grid-area: portfolio5;
-        width: 280px;
-        height: 280px;
+        width: 17.5rem;
+        height: 17.5rem;
         z-index: 10;
         transition-property: width, height;
         transition-duration: 250ms;
@@ -341,8 +343,8 @@ p {
     }
     .portfolio6:hover {
         grid-area: portfolio6;
-        width: 280px;
-        height: 280px;
+        width: 17.5rem;
+        height: 17.5rem;
         z-index: 10;
         transition-property: width, height;
         transition-duration: 250ms;
@@ -350,8 +352,8 @@ p {
     }
     .portfolio7:hover {
         grid-area: portfolio7;
-        width: 280px;
-        height: 280px;
+        width: 17.5rem;
+        height: 17.5rem;
         z-index: 10;
         transition-property: width, height;
         transition-duration: 250ms;
@@ -359,8 +361,8 @@ p {
     }
     .portfolio8:hover {
         grid-area: portfolio8;
-        width: 280px;
-        height: 280px;
+        width: 17.5rem;
+        height: 17.5rem;
         z-index: 10;
         transition-property: width, height;
         transition-duration: 250ms;
@@ -375,8 +377,8 @@ p {
         display:grid;
         column-gap: 5%;
         grid-template: 
-            'contact_details1 contact_details2' 50px
-            'contact_details3 contact_details4' 50px / 20% 30%;
+            'contact_details1 contact_details2' 3.125rem
+            'contact_details3 contact_details4' 3.125rem / 20% 30%;
     }
     
     .container_contact_details1 {
@@ -406,3 +408,4 @@ p {
 /* add a "home button" to take me right to the top */
 /* try to get more shorthand techiques to make code shorter and therefore easier navigate and research acceptable css layouts (such as having the css code next to each other inline style) */
 /* add fr to sides and remove (gaps?) */
+/* put necessary items in flexbox such as skills logos */
