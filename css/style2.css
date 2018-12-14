@@ -27,7 +27,10 @@ body {
         'header header header header' 0%
         'aside main main main' auto
         'aside main main main' auto
-        'footer footer footer footer' 0% / 1fr 50% 40% 00% ;
+        'footer footer footer footer' 0% / 0.0001fr 70% auto 0% ;
+/* dont change to fr units (1st one is fine) as it conflicts with portfolio containers and skills containers */
+/* tiny fr was used in order to fix problems arising from  huge resolutions in the portfolio container */
+/* auto used to stop gap appearing on right side as browser  */
 }
 
 .header {
@@ -40,23 +43,16 @@ body {
 
 .aside {
     grid-area: aside ;
-    /* background-color: rgb(255, 255, 255); */
     position: sticky;
     top: 0%;
-    height: 20%;
+    height: 15%;
     padding-right: 0.875rem;
-    /* width: 120%; */
-    /* width: 1.25rem; */
     transition: width 0.5s ease-out ;
 }
         .aside:hover {
             grid-area: aside;
-            /* background-color: rgb(26, 24, 24); */
             position: sticky;
             top: 0%;
-            /* height:37.5rem; */
-            /* width: 1300%; */
-            /* width: 100%; */
             transition: width 0.5s ease-out;
             z-index: 1;
         }
@@ -81,7 +77,6 @@ body {
 /* TITLE AND NAVBAR STYLING***************************************************************************************************************************** */
 .mainHeading {
     font-size: 4.6875rem;
-    /* color: rgb(0, 0, 0); */
     mix-blend-mode: exclusion;
     color: white;
     letter-spacing: 1.25rem;
@@ -90,8 +85,9 @@ body {
     top: 0;
     position: sticky;
     padding: 20% 0 20% 0;
+    font-family: 'Tinos', serif;
 }
-/* NOTE HOW IT BECAME A STICKY!!! */
+/* NOTE HOW IT BECAME A STICKY!!!  */
 
 
 /* sidebar style */
@@ -154,25 +150,35 @@ p {
 
 
 /* HTML CSS and JAVA logo's***************************************************************************************************************************** */
-.skillsContainer {
-    display: grid;
-    gap: 5%;
-    justify-items: center;
-    grid-template: 'htmlLogoContainer cssLogoContainer javaLogoContainer' 12.5rem / 1fr 1fr 1fr;
-}
-    .htmlLogoContainer {
-        grid-area: htmlLogoContainer;
+    /* .skillsContainer {
+        display: grid;
+        gap: 5%;
+        justify-items: center;
+        grid-template: 'htmlLogoContainer cssLogoContainer javaLogoContainer' 12.5rem / 1fr 1fr 1fr;
     }
-    .cssLogoContainer {
-        grid-area: cssLogoContainer;
-    }
-    .javaLogoContainer {
-        grid-area: javaLogoContainer;
-    }
+        .htmlLogoContainer {
+            grid-area: htmlLogoContainer;
+        }
+        .cssLogoContainer {
+            grid-area: cssLogoContainer;
+        }
+        .javaLogoContainer {
+            grid-area: javaLogoContainer;
+        } */
 /* justify items and align items apply respectively centers the items horizontaly and vertically but mostly evenly amongst the grid  */
 /* justify content and align content instead tends to move the content as a collective, thus keeping its rowgap and column gap */
 /* justify self and align self applies above to only a specific block within a grid */
 /* Notes link: https://alligator.io/css/align-justify/ */
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+
+
 /* LOGO STYLE END*************************************************************************************************************************************** */
 
 
@@ -409,3 +415,4 @@ p {
 /* try to get more shorthand techiques to make code shorter and therefore easier navigate and research acceptable css layouts (such as having the css code next to each other inline style) */
 /* add fr to sides and remove (gaps?) */
 /* put necessary items in flexbox such as skills logos */
+/* implement dropdowns instead of resizing the portfolio icons https://www.w3schools.com/css/css_dropdowns.asp */
