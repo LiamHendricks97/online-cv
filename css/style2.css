@@ -194,6 +194,7 @@ p {
     display: grid;
     justify-items: center;
     align-items: center;
+    margin-bottom: 6.25rem;
     grid-template: 
         'portfolio1 portfolio2 portfolio3 portfolio4' 12.5rem
         'portfolio5 portfolio6 portfolio7 portfolio8' 12.5rem / 25% 25% 25% 25%;
@@ -383,31 +384,45 @@ p {
 
 
     /* contact details grid start*********************************************************************************************************************** */
-    .container-contact_details {
+     .container-contact_details {
         display:grid;
-        column-gap: 5%;
         grid-template: 
             'contact_details1 contact_details2' 3.125rem
-            'contact_details3 contact_details4' 3.125rem / 20% 30%;
+            'contact_details3 contact_details4' 3.125rem / 1fr 1fr;
     }
     
     .container_contact_details1 {
         grid-area: contact_details1;
         text-align: left;
+        padding-left: 70%;
+        color: white;
+        font-size: 1.125rem;
     }
     .container_contact_details2 {
         grid-area: contact_details2;
         text-align: left;
+        color: white;
+        font-size: 1.125rem;
     }
     .container_contact_details3{
         grid-area: contact_details3;
         text-align: left;
+        padding-left: 70%;
+        color: white;
+        font-size: 1.125rem;
     }
     .container_contact_details4 {
         grid-area: contact_details4;
         text-align: left;
-    }
-    
+        color: white;
+        font-size: 1.125rem;
+    } 
+    /* .container-contact_details {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        
+    } */
     /* container details grid end*********************************************************************************************************************** */
 /* WORK TO STILL DO AND IDEA BIN */
 /* use fr and learn how it works (doesnt seem to work so far) */
@@ -423,3 +438,4 @@ p {
 /* add fr to sides and remove (gaps?) */
 /* put necessary items in flexbox such as skills logos */
 /* implement dropdowns instead of resizing the portfolio icons https://www.w3schools.com/css/css_dropdowns.asp */
+/* laern overlap grids. I put it into the firefox bookmarks and left the tab open */
