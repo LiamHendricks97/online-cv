@@ -27,10 +27,10 @@ body {
         'header header header header' 0%
         'aside main main main' auto
         'aside main main main' auto
-        'footer footer footer footer' 0% / 0.0001fr 70% auto 0% ;
+        'footer footer footer footer' 0% / auto 70% 1fr 0% ;
 /* dont change to fr units (1st one is fine) as it conflicts with portfolio containers and skills containers */
 /* tiny fr was used in order to fix problems arising from  huge resolutions in the portfolio container */
-/* auto used to stop gap appearing on right side as browser  */
+/* auto used to stop gap appearing on right side of browser  */
 }
 
 .header {
@@ -48,6 +48,8 @@ body {
     height: 15%;
     padding-right: 0.875rem;
     transition: width 0.5s ease-out ;
+    width: 3em;
+    /* background: #ff6b6c; */
 }
         .aside:hover {
             grid-area: aside;
@@ -55,6 +57,7 @@ body {
             top: 0%;
             transition: width 0.5s ease-out;
             z-index: 1;
+            width: 12em;;
         }
 
 .main {
@@ -84,8 +87,9 @@ body {
     background-color: rgba(255, 255, 255, 0);
     top: 0;
     position: sticky;
-    padding: 20% 0 20% 0;
+    padding: 27% 0 27% 0;
     font-family: 'Tinos', serif;
+    line-height: 0;
 }
 /* NOTE HOW IT BECAME A STICKY!!!  */
 
@@ -406,12 +410,15 @@ p {
     
     /* container details grid end*********************************************************************************************************************** */
 /* WORK TO STILL DO AND IDEA BIN */
+/* use fr and learn how it works (doesnt seem to work so far) */
 /* add logo to sidebar */
+        /* above two has been completed but has added a whole new set of problems in that it moves the entire (ENTIRE) main container.
+        We need to figure out a way to make the aside bar overlap instead. */
+        /* or i can leave it?? */
+/* Need to fix the aside bar height in that it only responds when touched on the upper regions */
 /* use linkind */
 /* have to footer, one bottom and one on top of that */
-/* use fr and learn how it works (doesnt seem to work so far) */
 /* optimalization for picture (its too big and takes too much space) */
-/* add a "home button" to take me right to the top */
 /* try to get more shorthand techiques to make code shorter and therefore easier navigate and research acceptable css layouts (such as having the css code next to each other inline style) */
 /* add fr to sides and remove (gaps?) */
 /* put necessary items in flexbox such as skills logos */
