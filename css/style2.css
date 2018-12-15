@@ -24,10 +24,10 @@ body {
 .gridcontainer {
     display: grid;
     grid-template: 
-        'header header header header' 0%
+        'header header header header' 100vh
         'aside main main main' auto
         'aside main main main' auto
-        'footer footer footer footer' 0% / 5% 70% 1fr 1fr ;
+        'footer footer footer footer' 70vh / 3em 70% 1fr 1fr ;
 /* dont change to fr units (1st one is fine) as it conflicts with portfolio containers and skills containers */
 /* tiny fr was used in order to fix problems arising from  huge resolutions in the portfolio container */
 /* auto used to stop gap appearing on right side of browser  */
@@ -39,6 +39,8 @@ body {
     background-image: url(../images/pexels-photo-988872.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    /* position: sticky;
+    top: 0%; */
 }
 
 .aside {
@@ -64,7 +66,8 @@ body {
             transition: width 0.5s ease-out;
             z-index: 3;
             width: 17em;
-            height: min-content;
+            overflow: auto;
+            height: 100vh;
             background-image: url(../images/milky-way-starry-sky-night-sky-star-957061.jpeg);
             background-size: cover;
             background-repeat: no-repeat;
@@ -102,7 +105,7 @@ body {
     background-color: rgba(255, 255, 255, 0);
     top: 0;
     position: sticky;
-    padding: 27% 0 27% 0;
+    padding-top: 35vh;
     font-family: 'Tinos', serif;
 }
 /* NOTE HOW IT BECAME A STICKY!!!  */
@@ -326,81 +329,6 @@ p {
         border: solid 0.625rem white;
 
     }
-
-    
-    /* .portfolio1:hover {
-        grid-area: portfolio1;
-        width: 17.5rem;
-        height: 17.5rem;
-        z-index: 10;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-    }
-    .portfolio2:hover {
-        grid-area: portfolio2;
-        width: 17.5rem;
-        height: 17.5rem;
-        z-index: 10;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-    }
-    .portfolio3:hover {
-        grid-area: portfolio3;
-        width: 17.5rem;
-        height: 17.5rem;
-        z-index: 10;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-    }
-    .portfolio4:hover {
-        grid-area: portfolio4;
-        width: 17.5rem;
-        height: 17.5rem;
-        z-index: 10;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-    }
-    .portfolio5:hover {
-        grid-area: portfolio5;
-        width: 17.5rem;
-        height: 17.5rem;
-        z-index: 10;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-    }
-    .portfolio6:hover {
-        grid-area: portfolio6;
-        width: 17.5rem;
-        height: 17.5rem;
-        z-index: 10;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-    }
-    .portfolio7:hover {
-        grid-area: portfolio7;
-        width: 17.5rem;
-        height: 17.5rem;
-        z-index: 10;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-    }
-    .portfolio8:hover {
-        grid-area: portfolio8;
-        width: 17.5rem;
-        height: 17.5rem;
-        z-index: 10;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-    } */
-
     /* PORTFOLIO STYLE AND CONTAINER END**************************************************************************************************************** */
 
 
@@ -411,44 +339,31 @@ p {
         grid-template: 
             'contact_details1 contact_details2' 3.125rem
             'contact_details3 contact_details4' 3.125rem / 1fr 1fr;
-    }
-    .container-contact_details:last-child {
-        padding-bottom: 18.75rem;
-    }
-    
+    } 
     .container_contact_details1 {
         grid-area: contact_details1;
         text-align: left;
-        padding-left: 70%;
-        color: white;
         font-size: 1.125rem;
+        color: #0f2e4a;
     }
     .container_contact_details2 {
         grid-area: contact_details2;
         text-align: left;
-        color: white;
         font-size: 1.125rem;
+        color: #0f2e4a;
     }
     .container_contact_details3{
         grid-area: contact_details3;
         text-align: left;
-        padding-left: 70%;
-        color: white;
         font-size: 1.125rem;
+        color: #0f2e4a;
     }
     .container_contact_details4 {
         grid-area: contact_details4;
         text-align: left;
-        color: white;
         font-size: 1.125rem;
-        /* grid; */
+        color: #0f2e4a;
     } 
-    /* .container-contact_details {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        
-    } */
     /* container details grid end*********************************************************************************************************************** */
 /* WORK TO STILL DO AND IDEA BIN */
 
