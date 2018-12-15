@@ -53,7 +53,6 @@ body {
     z-index: 3;
     background: url(../images/bg2.jpg) no-repeat;
     background-size: cover;
-    background-blend-mode: screen;
     background-position: 80% 90%;
     /* above gives the side bar more life...somehow */
     /* background: #ff6b6c; */
@@ -103,7 +102,6 @@ body {
     position: sticky;
     padding: 27% 0 27% 0;
     font-family: 'Tinos', serif;
-    line-height: 0;
 }
 /* NOTE HOW IT BECAME A STICKY!!!  */
 
@@ -444,24 +442,13 @@ p {
     } */
     /* container details grid end*********************************************************************************************************************** */
 /* WORK TO STILL DO AND IDEA BIN */
-/* use fr and learn how it works (doesnt seem to work so far) */
-/* add logo to sidebar */
-        /* above two has been completed but has added a whole new set of problems in that it moves the entire (ENTIRE) main container.
-        We need to figure out a way to make the aside bar overlap instead. */
-        /* or i can leave it?? */
-/* Need to fix the aside bar height in that it only responds when touched on the upper regions */
+
 /* use linkind */
-/* have to footer, one bottom and one on top of that */
 /* optimalization for picture (its too big and takes too much space) */
 /* try to get more shorthand techiques to make code shorter and therefore easier navigate and research acceptable css layouts (such as having the css code next to each other inline style) */
-/* add fr to sides and remove (gaps?) */
 /* put necessary items in flexbox such as skills logos */
 /* implement dropdowns instead of resizing the portfolio icons https://www.w3schools.com/css/css_dropdowns.asp */
-/* laern overlap grids. I put it into the firefox bookmarks and left the tab open */
 /* use the animate feature tomorrow, looks pretty neat on Toyers page */
 /* new bug found exclusive to the github page where the TITLE doesnt text wrap properly (or rather not at all) */
-/* Also plz dont delete these as using it later as reference (if that even makes sense) could be beneficial */
 /* add sass logo */
-/* add huge footer to hide height of sidebar */
-/* make images more cohesive in that it complients each otehr more and doesnt clash as much. maybe aslo make them more to do with task ie computers */
 /* add sort of bibliography for pexels */
