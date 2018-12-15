@@ -76,6 +76,8 @@ body {
     z-index: 0;
     color: white;
     position: relative;
+    padding-left: 10%;
+    padding-right: 10%
 }
 
 .footer {
@@ -203,17 +205,23 @@ p {
 
 /* portfolioFOLIO CONTAINER AND STYLING********************************************************************************************************************** */
     /* Below code should be able to be done via the [transform: scale();] selector but at the cost of losing some specialities that the grid offers */
-.portfolioContainer {
+/* .portfolioContainer {
     display: grid;
     justify-items: center;
     align-items: center;
     margin-bottom: 6.25rem;
     grid-template: 
         'portfolio1 portfolio2 portfolio3 portfolio4' 12.5rem
-        'portfolio5 portfolio6 portfolio7 portfolio8' 12.5rem / 25% 25% 25% 25%;
+        'portfolio5 portfolio6 portfolio7 portfolio8' 12.5rem / 25% 25% 25% 25%; */
         /* dont use fr as the other boxes move when one box is expanded */
-}
 /* use alt and mouse to add code to below items simultaneously */
+
+.portfolioContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+
     .portfolio1 {
         grid-area: portfolio1;
         position: relative;
@@ -320,7 +328,7 @@ p {
     }
 
     
-    .portfolio1:hover {
+    /* .portfolio1:hover {
         grid-area: portfolio1;
         width: 17.5rem;
         height: 17.5rem;
@@ -391,7 +399,8 @@ p {
         transition-property: width, height;
         transition-duration: 250ms;
         transition-timing-function: linear;
-    }
+    } */
+
     /* PORTFOLIO STYLE AND CONTAINER END**************************************************************************************************************** */
 
 
