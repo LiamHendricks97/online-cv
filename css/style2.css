@@ -27,7 +27,7 @@ body {
         'header header header header' 0%
         'aside main main main' auto
         'aside main main main' auto
-        'footer footer footer footer' 0% / auto 70% 1fr 0% ;
+        'footer footer footer footer' 0% / 5% 70% 1fr 1fr ;
 /* dont change to fr units (1st one is fine) as it conflicts with portfolio containers and skills containers */
 /* tiny fr was used in order to fix problems arising from  huge resolutions in the portfolio container */
 /* auto used to stop gap appearing on right side of browser  */
@@ -45,10 +45,17 @@ body {
     grid-area: aside ;
     position: sticky;
     top: 0%;
-    height: 15%;
+    height: 100vh;
+    /* guide to viewports or vh https://web-design-weekly.com/2014/11/18/viewport-units-vw-vh-vmin-vmax/ (vmax and other v values too) */
     padding-right: 0.875rem;
     transition: width 0.5s ease-out ;
     width: 3em;
+    z-index: 3;
+    background: url(../images/bg2.jpg) no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+    background-position: 80% 90%;
+    /* above gives the side bar more life...somehow */
     /* background: #ff6b6c; */
 }
         .aside:hover {
@@ -56,8 +63,12 @@ body {
             position: sticky;
             top: 0%;
             transition: width 0.5s ease-out;
-            z-index: 1;
-            width: 12em;;
+            z-index: 3;
+            width: 17em;
+            height: min-content;
+            background-image: url(../images/milky-way-starry-sky-night-sky-star-957061.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
 .main {
@@ -65,12 +76,15 @@ body {
     background-color: rgba(255, 255, 255, 0.171);
     z-index: 0;
     color: white;
+    position: relative;
 }
 
 .footer {
     grid-area: footer;
     background-color: rgb(0, 0, 0);
     z-index: 2;
+    background-image: url(../images/pexels-photo-988872.jpeg);
+    background-size: cover;
 }
 /* GRID LAYOUT AND STYLING END************************************************************************************************************************** */
 
@@ -102,7 +116,8 @@ nav ul li {
     overflow: hidden;
 }
 ul {
-    padding: 0 0 0 1.375rem;
+    /* padding: 0 0 0 22px; */
+    padding: 0 0 0 1.2vw;
 }
 a {
     text-decoration: none;
@@ -390,6 +405,9 @@ p {
             'contact_details1 contact_details2' 3.125rem
             'contact_details3 contact_details4' 3.125rem / 1fr 1fr;
     }
+    .container-contact_details:last-child {
+        padding-bottom: 18.75rem;
+    }
     
     .container_contact_details1 {
         grid-area: contact_details1;
@@ -416,6 +434,7 @@ p {
         text-align: left;
         color: white;
         font-size: 1.125rem;
+        /* grid; */
     } 
     /* .container-contact_details {
         display: flex;
@@ -439,3 +458,10 @@ p {
 /* put necessary items in flexbox such as skills logos */
 /* implement dropdowns instead of resizing the portfolio icons https://www.w3schools.com/css/css_dropdowns.asp */
 /* laern overlap grids. I put it into the firefox bookmarks and left the tab open */
+/* use the animate feature tomorrow, looks pretty neat on Toyers page */
+/* new bug found exclusive to the github page where the TITLE doesnt text wrap properly (or rather not at all) */
+/* Also plz dont delete these as using it later as reference (if that even makes sense) could be beneficial */
+/* add sass logo */
+/* add huge footer to hide height of sidebar */
+/* make images more cohesive in that it complients each otehr more and doesnt clash as much. maybe aslo make them more to do with task ie computers */
+/* add sort of bibliography for pexels */
