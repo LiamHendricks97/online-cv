@@ -27,7 +27,7 @@ body {
         'header header header header' 100vh
         'aside main main main' auto
         'aside main main main' auto
-        'footer footer footer footer' 70vh / 3em 70% 1fr 1fr ;
+        'footer footer footer footer' 70vh / 2em 70% 1fr 1fr ;
 /* dont change to fr units (1st one is fine) as it conflicts with portfolio containers and skills containers */
 /* tiny fr was used in order to fix problems arising from  huge resolutions in the portfolio container */
 /* auto used to stop gap appearing on right side of browser  */
@@ -49,9 +49,10 @@ body {
     top: 0%;
     height: 100vh;
     /* guide to viewports or vh https://web-design-weekly.com/2014/11/18/viewport-units-vw-vh-vmin-vmax/ (vmax and other v values too) */
-    padding-right: 0.875rem;
+    padding-right: 0vw;
+    padding-left: 0;
     transition: width 0.5s ease-out, background-image 250ms ease-in-out ;
-    width: 3em;
+    width: 2em;
     z-index: 3;
     background: url(../images/bg2.jpg) no-repeat;
     background-size: cover;
@@ -98,7 +99,8 @@ body {
 
 /* TITLE AND NAVBAR STYLING***************************************************************************************************************************** */
 .mainHeading {
-    font-size: 4.6875rem;
+    /* font-size: 4.6875rem; */
+    font-size: 10vw;
     mix-blend-mode: exclusion;
     color: white;
     letter-spacing: 1.25rem;
@@ -121,7 +123,7 @@ nav ul li {
 }
 ul {
     /* padding: 0 0 0 22px; */
-    padding: 0 0 0 1.2vw;
+    padding: 0 0 0 0.3em;
 }
 a {
     text-decoration: none;
@@ -381,3 +383,18 @@ p {
 /* need to comment better */
 /* get back into pixel art for our icons */
 /* icons on navbar disappear at extreme zoom outs  */
+/* give each heading a section in the html (semantics) and also give each one a its own background image as to make it more interesting and less blue (literally) */
+/* buy ssd and put Linux on it. I need to figure out if I can boot it from a different internal drive without going into the bios constantly */
+/* use g zip or something similar if we do end up using our own server */
+/* incorporate some hr */
+/* have multiple backgrounds maybe? */
+
+
+    /* design to my understanding revolves around two methods or ways of doing(?)
+        1) making a robust website that requires minimal resposive design
+        2) making a more specialized website that requires special repo design to function but looks better for the most part.
+    with mindsets to code below:
+        1) using massive amounts of code to achieve an effect
+        2) using minimal code to achieve a big effect
+    Note how A distinct pair is made among 1 and 1, 2 and 2. 
+    I dont fully understand my own observations but as time progresses I do wish to explore these concepts more and to flesh them out. */
