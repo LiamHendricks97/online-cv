@@ -154,7 +154,7 @@ nav ul li a:link {
     padding: 0.5em 0.5em ;
 }
 .headerarticle {
-    font-size: 3.125rem;
+    font-size: 4vmax;
     font-family: 'Tinos', serif;
     text-align: center;
     padding: 5em 0em 1em 0;
@@ -389,6 +389,8 @@ p {
 
 /* Have been on holiday and feel quite rusty. Starting again today 16 January 2019 */
 /* There needs to be "filler" that fills out the website in areas after before the headers as to enlarge the vertical size of the website. Anouther way of explaining is to make the website looking empty and then playing with the background (maybe some paralax shit?) to "fill it out" ie more scrolling and less content. Also ties in with last post in above posts. */
+/* Using too many div's is not good. We were told to instead use more "semantics" such as article, section and blah blah */
+/* look for cv pdf */
 
 
     /* design to my understanding revolves around two methods or ways of doing(?)
