@@ -392,6 +392,7 @@ p {
 /* There needs to be "filler" that fills out the website in areas after before the headers as to enlarge the vertical size of the website. Anouther way of explaining is to make the website looking empty and then playing with the background (maybe some paralax shit?) to "fill it out" ie more scrolling and less content. Also ties in with last post in above posts. */
 /* Using too many div's is not good. We were told to instead use more "semantics" such as article, section and blah blah */
 /* look for cv pdf */
+/* need to fix mobile version when clicking on side bar. Need to make side bar disappear when clicked on */
 
 
     /* design to my understanding revolves around two methods or ways of doing(?)
