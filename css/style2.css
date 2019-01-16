@@ -372,22 +372,23 @@ p {
 
 /* use linkind */
 /* optimalization for picture (its too big and takes too much space) */
-/* try to get more shorthand techiques to make code shorter and therefore easier navigate and research acceptable css layouts (such as having the css code next to each other inline style) */
-/* put necessary items in flexbox such as skills logos */
+/* try to get more shorthand techiques to make code shorter and therefore easier navigate and research acceptable css layouts (such as having the css code next to each other inline style) *
 /* implement dropdowns instead of resizing the portfolio icons https://www.w3schools.com/css/css_dropdowns.asp */
 /* use the animate feature tomorrow, looks pretty neat on Toyers page */
-/* new bug found exclusive to the github page where the TITLE doesnt text wrap properly (or rather not at all) */
 /* add sass logo */
 /* add sort of bibliography for pexels */
-/* add midsection to make less bland. Mid section consists of background changes or images */
 /* need to comment better */
 /* get back into pixel art for our icons */
-/* icons on navbar disappear at extreme zoom outs  */
 /* give each heading a section in the html (semantics) and also give each one a its own background image as to make it more interesting and less blue (literally) */
-/* buy ssd and put Linux on it. I need to figure out if I can boot it from a different internal drive without going into the bios constantly */
+/* buy ssd and put Linux on it. I need to figure out if I can boot it from a different internal drive without going into the bios constantly (personal) */
 /* use g zip or something similar if we do end up using our own server */
 /* incorporate some hr */
 /* have multiple backgrounds maybe? */
+/* add midsection to make less bland. Mid section consists of background changes or images */
+
+
+/* Have been on holiday and feel quite rusty. Starting again today 16 January 2019 */
+/* There needs to be "filler" that fills out the website in areas after before the headers as to enlarge the vertical size of the website. Anouther way of explaining is to make the website looking empty and then playing with the background (maybe some paralax shit?) to "fill it out" ie more scrolling and less content. Also ties in with last post in above posts. */
 
 
     /* design to my understanding revolves around two methods or ways of doing(?)
