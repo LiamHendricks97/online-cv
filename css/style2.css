@@ -52,7 +52,7 @@ body {
     padding-right: 0vw;
     padding-left: 0;
     transition: width 0.5s ease-out, background-image 250ms ease-in-out ;
-    width: 2em;
+    width: 3em;
     z-index: 3;
     background: url(../images/bg2.jpg) no-repeat;
     background-size: cover;
@@ -66,7 +66,7 @@ body {
             top: 0%;
             transition: width 0.5s ease-out, background-image 250ms ease-in-out;
             z-index: 3;
-            width: 17em;
+            width: 12em;
             overflow: auto;
             height: 100vh;
             background-image: url(../images/pexels-photo-149988.jpeg);
@@ -118,7 +118,7 @@ body {
 nav ul li {
     font-size: 1.25rem;
     list-style-type: none;
-    padding: 3.25rem 0 0 0;
+    padding: 3.25rem 0 0 0.4rem;
     overflow: hidden;
 }
 ul {
@@ -334,41 +334,17 @@ p {
 
     }
     /* PORTFOLIO STYLE AND CONTAINER END**************************************************************************************************************** */
+    
+.educationContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section.educationContainer h2 {
+    text-align: center;
+}
+    
 
-
-
-    /* contact details grid start*********************************************************************************************************************** */
-     .container-contact_details {
-        display:grid;
-        grid-template: 
-            'contact_details1 contact_details2' 3.125rem
-            'contact_details3 contact_details4' 3.125rem / 1fr 1fr;
-    } 
-    .container_contact_details1 {
-        grid-area: contact_details1;
-        text-align: left;
-        font-size: 1.125rem;
-        color: #0f2e4a;
-    }
-    .container_contact_details2 {
-        grid-area: contact_details2;
-        text-align: left;
-        font-size: 1.125rem;
-        color: #0f2e4a;
-    }
-    .container_contact_details3{
-        grid-area: contact_details3;
-        text-align: left;
-        font-size: 1.125rem;
-        color: #0f2e4a;
-    }
-    .container_contact_details4 {
-        grid-area: contact_details4;
-        text-align: left;
-        font-size: 1.125rem;
-        color: #0f2e4a;
-    } 
-    /* container details grid end*********************************************************************************************************************** */
 /* WORK TO STILL DO AND IDEA BIN */
 
 /* use linkind */
