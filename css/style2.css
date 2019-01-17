@@ -66,7 +66,7 @@ body {
             top: 0%;
             transition: width 0.5s ease-out, background-image 250ms ease-in-out;
             z-index: 3;
-            width: 12em;
+            width: 14em;
             overflow: auto;
             height: 100vh;
             background-image: url(../images/pexels-photo-149988.jpeg);
@@ -108,7 +108,7 @@ body {
     background-color: rgba(255, 255, 255, 0);
     top: 0;
     position: sticky;
-    padding-top: 35vh;
+    padding-top: 16vh;
     font-family: 'Tinos', serif;
 }
 /* NOTE HOW IT BECAME A STICKY!!!  */
@@ -118,7 +118,7 @@ body {
 nav ul li {
     font-size: 1.25rem;
     list-style-type: none;
-    padding: 3.25rem 0 0 0.4rem;
+    padding: 8vh 0 0 0.4rem;
     overflow: hidden;
 }
 ul {
@@ -369,6 +369,7 @@ section.educationContainer h2 {
 /* Using too many div's is not good. We were told to instead use more "semantics" such as article, section and blah blah */
 /* look for cv pdf */
 /* need to fix mobile version when clicking on side bar. Need to make side bar disappear when clicked on */
+/* Still plenty to do but with very limited internet it's hard to learn anything new at college. Project is 'ok' to submit in the meanwhile whilst I think of how to implement idea bins  */
 
 
     /* design to my understanding revolves around two methods or ways of doing(?)
