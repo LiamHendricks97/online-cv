@@ -54,9 +54,10 @@ body {
     transition: width 0.5s ease-out, background-image 250ms ease-in-out ;
     width: 3em;
     z-index: 3;
-    background: url(../images/bg2.jpg) no-repeat;
+    background-image: url(../images/bg2.jpg) no-repeat;
     background-size: cover;
     background-position: 50% 100%;
+    background-color: aqua;
     /* above gives the side bar more life...somehow */
     /* background: #ff6b6c; */
 }
@@ -73,6 +74,7 @@ body {
             background-position: 50% 100%;
             background-size: cover;
             background-repeat: no-repeat;
+            background-color: aqua;
         }
 
 .main {
