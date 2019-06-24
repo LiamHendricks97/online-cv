@@ -261,86 +261,10 @@ p {
         text-align:center;
 
     }
-    .portfolio3 {
-        grid-area: portfolio3;
-        position: relative;
+    .project-images {
+        object-fit: cover;
         width: 10rem;
         height: 10rem;
-        background-color: rgb(87, 71, 71);
-        z-index: 5;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-        border: solid 0.625rem white;
-        text-align:center;
-
-    }
-    .portfolio4 {
-        grid-area: portfolio4;
-        position: relative;
-        width: 10rem;
-        height: 10rem;
-        background-color: rgb(117, 76, 76);
-        z-index: 5;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-        border: solid 0.625rem white;
-        text-align:center;
-
-    }
-    .portfolio5 {
-        grid-area: portfolio5;
-        position: relative;
-        width: 10rem;
-        height: 10rem;
-        background-color: rgb(59, 49, 49);
-        z-index: 5;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-        border: solid 0.625rem white;
-        text-align:center;
-
-    }
-    .portfolio6 {
-        grid-area: portfolio6;
-        position: relative;
-        width: 10rem;
-        height: 10rem;
-        background-color: rgb(116, 71, 71);
-        z-index: 5;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-        border: solid 0.625rem white;
-
-    }
-    .portfolio7 {
-        grid-area: portfolio7;
-        position: relative;
-        width: 10rem;
-        height: 10rem;
-        background-color: rgb(138, 68, 68);
-        z-index: 5;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-        border: solid 0.625rem white;
-
-    }
-    .portfolio8 {
-        grid-area: portfolio8;
-        position: relative;
-        width: 10rem;
-        height: 10rem;
-        background-color: rgb(199, 43, 43);
-        z-index: 5;
-        transition-property: width, height;
-        transition-duration: 250ms;
-        transition-timing-function: linear;
-        border: solid 0.625rem white;
-
     }
     /* PORTFOLIO STYLE AND CONTAINER END**************************************************************************************************************** */
     
